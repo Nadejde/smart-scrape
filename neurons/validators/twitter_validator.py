@@ -199,7 +199,7 @@ class TwitterScraperValidator:
                 wandb_data["scores"][uid] = reward
                 wandb_data["responses"][uid] = response.completion
                 wandb_data["prompts"][uid] = prompt
-            bt.logging.info(f"Updated scores and wandb_data for uid: {uid}", wandb_data)
+                bt.logging.info(f"Updated scores and wandb_data for uid: {uid}", wandb_data)
                     
             await self.neuron.update_scores(scores, wandb_data)
 
